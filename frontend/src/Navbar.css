@@ -1,0 +1,21 @@
+.tab-hover::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
+    z-index: -1;
+  }
+  
+  .tab-hover:hover::after {
+    width: 120px;
+    height: 120px;
+    opacity: 1;
+  }
+  

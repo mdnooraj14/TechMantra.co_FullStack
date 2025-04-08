@@ -1,0 +1,22 @@
+.services-heading {
+    margin-top: -20px; /* adjust this value as needed */
+    margin-bottom: 30px;
+  }
+  .rotating-heading {
+    animation: rotateIn 2.2s ease-in-out;
+    margin-top: -40px; 
+
+   
+  }
+  
+  @keyframes rotateIn {
+    0% {
+      transform: rotateX(-90deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
+  
